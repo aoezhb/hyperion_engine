@@ -102,11 +102,12 @@
         const SUPABASE_KEY = 'sb_publishable_m07Q-5zNUkAvtElCjaoWAg_zeRBbN6r';
         // ---------------------
 
-        const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+        // Fix: Use the global 'supabase' object exposed by the CDN
+        const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
         async function fetchNodes() {
             // Query the 'live_nodes' view we created
-            const { data, error } = await supabase
+            const { data, error } = await client
                 .from('live_nodes')
                 .select('*')
                 .order('last_seen', { ascending: false });
