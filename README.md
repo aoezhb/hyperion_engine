@@ -71,9 +71,3 @@ cargo run -- --demo
 ## 📜 License
 
 Distributed under the Apache License, Version 2.0. See `LICENSE` for more information.
-
----
-
-<p align="center">
-  Built with ❤️ by the Hyperion Labs Team.
-</p>
