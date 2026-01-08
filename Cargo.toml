@@ -28,6 +28,8 @@ rand = "0.9"
 # --- DePIN Core Networking (Libp2p) ---
 # Note: Production builds should pin specific versions and features
 libp2p = { version = "0.53", features = ["tokio", "tcp", "noise", "yamux", "macros", "ping", "identify", "kad"] }
+reqwest = { version = "0.13.1", features = ["json"] }
+chrono = { version = "0.4.42", features = ["serde"] }
 
 # --- Future Hardware Abstraction Libraries (Optional) ---
 # nvml-wrapper = "0.9" # For Nvidia GPU monitoring

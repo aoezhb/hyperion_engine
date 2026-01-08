@@ -39,6 +39,12 @@ graph TD
 - **🔌 Modular Execution Runtimes**: Swap computation engines (e.g., Candle for AI, Wasmtime for general compute) without rebuilding the core.
 - **🌐 Autonomous P2P Discovery**: Robust peer discovery and DHT-based routing.
 
+## 📊 Live Monitoring
+
+Experience the real-time heartbeat of the Hyperion Network. Our global dashboard tracks active nodes, GPU telemetry, and task distribution across the globe.
+
+**[Explore Global Live Dashboard →](https://aoezhb.github.io/hyperion_engine/dashboard.html)**
+
 ## 🛠 Getting Started
 
 ### Prerequisites
