@@ -39,7 +39,7 @@ Hyperion Engine is built upon a rigorous understanding of distributed computing 
 ### ✅ Core Workloads
 
 1.  **AI Inference at the Edge**
-    *   **Logic**: Leveraging high-VRAM consumer GPUs (e.g., RTX 4090 24GB) to serve LLMs (7B/13B/70B-Int4).
+    *   **Logic**: Leveraging high-VRAM consumer GPUs (e.g. , RTX 4090 24GB) to serve LLMs (7B/13B/70B-Int4).
     *   **Advantage**: Built-in optimized runtimes (vLLM/Candle compatible) ensure millisecond-level latency for web requests. This is the primary cash-flow generator in DePIN.
 
 2.  **ZK Proving (Zero-Knowledge Mining)**
