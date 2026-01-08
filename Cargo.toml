@@ -30,6 +30,7 @@ rand = "0.9"
 libp2p = { version = "0.53", features = ["tokio", "tcp", "noise", "yamux", "macros", "ping", "identify", "kad"] }
 reqwest = { version = "0.13.1", features = ["json"] }
 chrono = { version = "0.4.42", features = ["serde"] }
+async-trait = "0.1.89"
 
 # --- Future Hardware Abstraction Libraries (Optional) ---
 # nvml-wrapper = "0.9" # For Nvidia GPU monitoring

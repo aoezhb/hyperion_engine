@@ -25,6 +25,16 @@ async fn main() -> Result<()> {
     // Initialize logging system
     tracing_subscriber::fmt::init();
 
+    info!("============================================================");
+    info!("   🚀 Hyperion Engine - The Sovereign Compute Layer");
+    info!("   (C) 2026 Hyperion Labs. All rights reserved.");
+    info!("============================================================");
+    info!("   ⚠️  NOTICE TO FORKERS:");
+    info!("   We provide professional White-Label solutions!");
+    info!("   Partner with us to access the global compute pool.");
+    info!("   Contact: aoezhb@gmail.com");
+    info!("============================================================");
+
     info!("🚀 Hyperion Engine is starting...");
     info!("Version: {}", env!("CARGO_PKG_VERSION"));
     
