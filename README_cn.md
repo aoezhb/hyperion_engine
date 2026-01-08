@@ -32,6 +32,28 @@ graph TD
     - 可插拔的运行时（支持 AI 推理、渲染、ZK 证明）。
     - **PoPW (物理工作量证明)**: 内置 TEE (可信执行环境) 与 ZK-SNARK 接口，确保计算的可验证性。
 
+## 🎯 适用场景 (边界界定)
+
+Hyperion Engine 建立在对分布式计算物理瓶颈（特别是通信带宽与延迟）深刻理解的基础之上。我们拒绝虚假的营销承诺，专注于**"易并行、低通信、重计算" (Embarrassingly Parallel)** 的高价值场景。
+
+### ✅ 核心支持场景 (Core Supported Workloads)
+
+1.  **AI 推理 (Inference at the Edge)**
+    *   **原理**: 利用消费级高端显卡 (如 RTX 4090 24GB) 的大显存优势，加载 7B/13B/70B(Int4) 量化模型。
+    *   **优势**: 内置高性能运行时 (支持 vLLM/Candle)，实现毫秒级 Web 请求响应。这是目前 DePIN 产生现金流的主力场景。
+
+2.  **零知识证明生成 (ZK Proving)**
+    *   **原理**: 针对以太坊 Layer 2 (zkRollups) 的数学运算 (MSM, NTT)，这类任务对算力要求极高，但对带宽要求极低。
+    *   **优势**: Hyperion 是 "ZKP Prover Market Ready" 的客户端，可直接作为 ZK 挖矿节点运行。
+
+3.  **3D 渲染 (Distributed Rendering)**
+    *   **原理**: 每一帧画面的渲染相互独立，无跨节点通信需求。
+    *   **优势**: 完美适配 Blender/Cinema4D 的后台渲染任务。
+
+### ❌ 不支持场景 (Out of Scope)
+
+*   **LLM 大模型从头预训练 (Pre-training)**: 由于消费级宽带 (1Gbps) 与数据中心内部互联带宽 (900GB/s NVLink) 存在近 1000 倍的物理差距，去中心化网络无法胜任全参数通信密集的预训练任务。**Hyperion 专注于可落地的推理与微调市场。**
+
 ## 🚀 核心特性
 
 - **🚀 原生 Rust 性能**: 零成本抽象与内存安全，无垃圾回收延迟。

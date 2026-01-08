@@ -32,6 +32,28 @@ graph TD
     - Pluggable runtimes (AI Inference, Rendering, ZK-Proving).
     - **PoPW (Proof of Physical Work)**: Integrated TEE and ZK-SNARK interfaces for verifiable compute.
 
+## 🎯 Applicable Scenarios
+
+Hyperion Engine is built upon a rigorous understanding of distributed computing physics, specifically regarding bandwidth and latency constraints. We prioritize **Embarrassingly Parallel** workloads that generate real yield, rejecting technically infeasible marketing hypes.
+
+### ✅ Core Workloads
+
+1.  **AI Inference at the Edge**
+    *   **Logic**: Leveraging high-VRAM consumer GPUs (e.g., RTX 4090 24GB) to serve LLMs (7B/13B/70B-Int4).
+    *   **Advantage**: Built-in optimized runtimes (vLLM/Candle compatible) ensure millisecond-level latency for web requests. This is the primary cash-flow generator in DePIN.
+
+2.  **ZK Proving (Zero-Knowledge Mining)**
+    *   **Logic**: Handling heavy mathematical computations (MSM, NTT) required by Ethereum Layer 2 zkRollups. These tasks are compute-intensive but bandwidth-light.
+    *   **Advantage**: "ZKP Prover Market Ready" architecture allowing nodes to monetize compute by generating validity proofs.
+
+3.  **Distributed Rendering**
+    *   **Logic**: Frame-independent rendering tasks where no inter-node communication is required.
+    *   **Advantage**: Seamless integration with Blender/Cinema4D backend pipelines.
+
+### ❌ Out of Scope
+
+*   **LLM Pre-training**: Due to the ~1000x bandwidth gap between consumer fiber (1Gbps) and data center interconnects (NVLink 900GB/s), decentralized networks are physically unsuitable for parameter-dense training. **Hyperion focuses on the pragmatic Inference and Fine-tuning markets.**
+
 ## 🚀 Key Features
 
 - **🚀 Rust-Native Performance**: Zero-cost abstractions and memory safety without garbage collection pauses.
